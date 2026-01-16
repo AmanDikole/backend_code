@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/applications")
-@CrossOrigin(origins = "http://localhost:3001") // Allow Next.js
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3001"})// Allow Next.js
 public class ApplicationController {
 
     @Autowired
